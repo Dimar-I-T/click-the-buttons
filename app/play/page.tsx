@@ -68,7 +68,7 @@ export default function Play() {
     }
 
     const handleStop = () => {
-        const timeElapsed = minutes * 60 + seconds + miliseconds / 1000;
+        const timeElapsed = minutes * 60 + seconds + miliseconds / 100;
         if (highscore > timeElapsed) {
             setHighscore(timeElapsed);
         }
